@@ -1,0 +1,70 @@
+
+# 🌱 SeedTech - Frontend
+
+Bem-vindo ao repositório Front-end do **SeedTech**, um sistema moderno para controle e gestão de sementes agrícolas desenvolvido para a disciplina de **TADS/IHC**.
+
+Este projeto utiliza **Next.js**, **React** e **TypeScript**, e foi configurado para se integrar a uma API REST em Java (Spring Boot).
+
+---
+
+## 📋 Funcionalidades
+
+* **Autenticação Segura:** Login integrado ao banco de dados via API.
+* **Dashboard:** Tela de boas-vindas com identificação do usuário.
+* **Gestão de Sementes (CRUD Completo):**
+    * **Listagem:** Visualização de todas as sementes cadastradas.
+    * **Cadastro:** Inserção de novas sementes com ID manual (ex: SEM001).
+    * **Edição:** Atualização de dados de sementes existentes.
+    * **Exclusão:** Remoção de sementes do sistema.
+* **Identidade Visual:** Tema personalizado "SeedTech" (Verde/Agro).
+
+---
+
+## 🛠️ Tecnologias
+
+* **Framework:** [Next.js](https://nextjs.org/) (Pages Router)
+* **Biblioteca:** [React](https://reactjs.org/)
+* **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+* **Cliente HTTP:** [Axios](https://axios-http.com/)
+* **Estilização:** CSS Modules
+
+---
+
+## ⚙️ Pré-requisitos
+
+Para rodar este projeto, você precisará de:
+
+* **Node.js**: Versão 18 ou superior (Recomendado: v20 LTS).
+* **Gerenciador de Pacotes**: NPM (já vem com o Node) ou Yarn.
+* **Back-end Java**: Deve estar rodando na porta `8080`.
+* **Banco de Dados**: MySQL configurado e conectado ao Java.
+
+---
+
+## 🚀 Como Rodar o Projeto
+
+Siga os passos abaixo para instalar e executar o ambiente de desenvolvimento:
+
+### 1. Clonar o repositório
+Se estiver usando git, clone o projeto. Se baixou o ZIP, extraia e entre na pasta:
+```bash
+cd frontend
+2. Instalar Dependências
+Este comando lê o arquivo package.json e baixa todas as bibliotecas necessárias (incluindo React, Next e Axios) para a pasta node_modules.
+
+Bash
+
+npm install
+3. Configurar o Back-end
+Certifique-se de que os Controllers do seu Java possuem a anotação para liberar o acesso ao Front-end:
+
+Java
+
+@CrossOrigin(origins = "http://localhost:3000")
+4. Iniciar o Servidor
+Rode o comando abaixo para abrir o modo de desenvolvimento:
+
+Bash
+
+npm run dev
+O projeto estará acessível em: http://localhost:3000
